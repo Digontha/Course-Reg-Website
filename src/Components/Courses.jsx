@@ -1,4 +1,4 @@
-
+import { FaDollarSign,FaBook } from 'react-icons/fa'
 import PropTypes from 'prop-types';
 const Courses = ({data,handleName}) => {
     const{name,course_cover_img,description,price,credit}=data;
@@ -12,14 +12,18 @@ const Courses = ({data,handleName}) => {
 
               <div className="flex text-[#1C1B1B99]  justify-center font-medium gap-10">
 
-                <div className="">
+                <div className="flex items-center gap-2">
+                <p><FaDollarSign></FaDollarSign></p>
                      <p>Price:{price}</p>
+                     
                 </div>
 
 
 
-                <div>
+                <div className='flex items-center gap-2'>
+                <p><FaBook></FaBook></p>
                     <p>Credit:{credit}hr</p>
+                    
                 </div>
                       
                       

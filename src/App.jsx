@@ -67,12 +67,14 @@ function App() {
 
 
        <div className=' className=" w-[350px] mx-auto h-fit shadow-md  border bg-[#fff] text-start p-2 space-y-5 rounded-lg'>
-       <p className="text-[20px] font-bold text-[#2F80ED;]">Credit Hour Remaining :{remaining}</p>
+       <p className="text-[20px] font-bold text-[#2F80ED;]">Credit Hour Remaining :{remaining}hr</p>
+       <hr />
        <p className="text-[20px] font-bold">Course Name:</p>
 
        {
-          courseName.map(data=><Course key={data.id} data={data}></Course>)
+          courseName.map((data,index)=><Course index={index} key={data.id} data={data}></Course>)
         }
+        <hr />
              <p  className="text-[20px] font-bold">Total Credit Hour :{credit}</p>
        </div>
 

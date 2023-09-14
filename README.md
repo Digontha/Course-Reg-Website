@@ -1,8 +1,19 @@
-# React + Vite
+- 1 Answer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The project I did was a course registration project. That means you can buy courses from there if you want. Three features of my project are as follows:
 
-Currently, two official plugins are available:
+Firstly, you will see nine courses here.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Secondly, you will see a "Select" button there.
+
+Thirdly, if you click on that "Select" button, then your clicked course will be added to my cart section.And also Credit hours for the clicked course will be added to the section too.
+
+
+- 2 Answer
+
+We use usestate For data management in React applications. In this assignment I use usestate for four time on one file that file is "App.jsx" . It's help me for storing to my data as array of object. After storing my data I will use any loop on my usestate and after looping I get those data as object.Now using destructuring I will get those property and value and use this for my project. So it's help me to easy my work
+
+
+
+
+

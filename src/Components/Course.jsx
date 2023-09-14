@@ -1,17 +1,22 @@
 
 
 import PropTypes from 'prop-types';
-const Course = ({data}) => {
+const Course = ({data,index}) => {
     console.log(data);
     const {name}=data;
     return (
-        <div>
-            <p>{name}</p>
-        </div>
+        <>
+               
+                <p>{++index}. {name}</p>
+                 
+        </>
+            
+        
     );
 };
 Course.propTypes = {
     data:PropTypes.object,
-   
+    index:PropTypes.number
+    
 }
 export default Course;
