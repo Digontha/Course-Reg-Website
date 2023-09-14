@@ -4,7 +4,8 @@ import './App.css'
 import Courses from './Components/Courses'
 
 import Course from './Components/Course'
- 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -27,11 +28,12 @@ function App() {
       
     const Have = courseName.find(item=>item.id===data.id)
     if(Have){
-      alert('Already have')
+      toast('Already added');
+      
     }else{
       const NowCredit=credit+data.credit
       if(NowCredit>20){
-        alert(`credit remaining ${remaining}`)
+       toast(`credit remaining ${remaining}`)
       }else{
         const NewName =[...courseName,data]
         const NewCredit = credit+data.credit
@@ -78,6 +80,8 @@ function App() {
 
 
       </div>
+
+      <ToastContainer />
     </>
   )
 }
