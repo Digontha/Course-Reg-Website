@@ -1,0 +1,59 @@
+[
+    {
+      "course_cover_img": "https://i.ibb.co/KyCZkWz/Rectangle-2-2.png",
+      "name": "Programming Fundamentals",
+      "description": "Learn the basics of programming, including variables, loops, and functions.",
+      "price": 49.99,
+      "credit": 3
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/Qp38r09/Rectangle-2-3.png",
+      "name": "Algorithms and Data Structures",
+      "description": "Explore fundamental algorithms and data structures for problem-solving.",
+      "price": 59.99,
+      "credit": 4
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/GJTDZS7/Rectangle-3.png",
+      "name": "Data Structures and Algorithms",
+      "description": "Dive deep into data structures and algorithms to enhance your problem-solving skills.",
+      "price": 69.99,
+      "credit": 4
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/frdd9sz/Rectangle-2.png",
+      "name": "Python Programming",
+      "description": "Master the Python programming language for various applications.",
+      "price": 49.99,
+      "credit": 3
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/Qn1pXwP/Rectangle-2-5.png",
+      "name": "Software Engineering Principles",
+      "description": "Learn the principles of software engineering, including design and development best practices.",
+      "price": 59.99,
+      "credit": 4
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/M1qsSPt/Rectangle-3-1.png",
+      "name": "Introduction to Cloud Computing",
+      "description": "Explore the fundamentals of cloud computing and its applications.",
+      "price": 69.99,
+      "credit": 4
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/CvTdmVf/Rectangle-2-1.png",
+      "name": "Database Management with MySQL",
+      "description": "Gain proficiency in MySQL database management and SQL queries.",
+      "price": 49.99,
+      "credit": 3
+    },
+    {
+      "course_cover_img": "https://i.ibb.co/QnLDY32/Rectangle-2-6.png",
+      "name": "Problem-Solving Strategies",
+      "description": "Develop effective problem-solving strategies for various challenges.",
+      "price": 39.99,
+      "credit": 3
+    }
+  ]
+  
