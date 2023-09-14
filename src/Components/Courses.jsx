@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 const Courses = ({data,handleName}) => {
     const{name,course_cover_img,description,price,credit}=data;
-    
+    console.log(name)
     return (
         <div className="w-[320px] mx-auto h-[400px] shadow-md  border bg-[#fff] text-center p-2 space-y-5 rounded-lg">
               <img className="w-fit mx-auto" src={course_cover_img} alt="" />
