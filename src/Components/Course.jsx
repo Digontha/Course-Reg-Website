@@ -1,16 +1,17 @@
 
 
-const Course = () => {
+import PropTypes from 'prop-types';
+const Course = ({data}) => {
+    console.log(data);
+    const {name}=data;
     return (
-        <div className="w-[300px] mx-auto h-[400px] shadow-md  border bg-[#fff] text-start p-2 space-y-5 rounded-lg">
-            <p className="text-[20px] font-bold text-[#2F80ED;]">Credit Hour Remaining :</p>
-
-            <p className="text-[20px] font-bold">Course Name</p>
-
-            <p  className="text-[20px] font-bold">Total Credit Hour :</p>
-            
+        <div>
+            <p>{name}</p>
         </div>
     );
 };
-
+Course.propTypes = {
+    data:PropTypes.object,
+   
+}
 export default Course;

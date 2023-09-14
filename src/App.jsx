@@ -2,13 +2,20 @@ import {useState, useEffect  } from 'react'
 
 import './App.css'
 import Courses from './Components/Courses'
-import { data } from 'autoprefixer'
+
 import Course from './Components/Course'
  
 
 function App() {
 
   const [courses,setCourses]=useState([])
+
+  const [courseName,setCourseName]=useState([])
+  
+  const [credit,setCredit]=useState(0)
+  const [remaining,setRemaining]=useState(20)
+
+
   
   useEffect(()=>{
     fetch('data.json')
@@ -16,6 +23,30 @@ function App() {
     .then(data => setCourses(data))
   },[])
 
+  function handleName(data){
+      
+    const Have = courseName.find(item=>item.id===data.id)
+    if(Have){
+      alert('Already have')
+    }else{
+      const NowCredit=credit+data.credit
+      if(NowCredit>20){
+        alert(`credit remaining ${remaining}`)
+      }else{
+        const NewName =[...courseName,data]
+        const NewCredit = credit+data.credit
+        setCredit(NewCredit)
+        setRemaining(remaining-data.credit)
+        setCourseName(NewName)
+      }
+     
+    }
+    
+
+
+    
+
+  }
 
   return (
     <>
@@ -23,14 +54,29 @@ function App() {
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 '>
       {
-            courses.map(data=><Courses data={data}></Courses>)
+            courses.map(data=><Courses key={data.id} handleName={handleName} data={data}></Courses>)
       }
       </div>
 
-      <div className=''>
-        <Course></Course>
-      </div>
+
+
+
       
+
+
+       <div className=' className=" w-[350px] mx-auto h-fit shadow-md  border bg-[#fff] text-start p-2 space-y-5 rounded-lg'>
+       <p className="text-[20px] font-bold text-[#2F80ED;]">Credit Hour Remaining :{remaining}</p>
+       <p className="text-[20px] font-bold">Course Name:</p>
+
+       {
+          courseName.map(data=><Course key={data.id} data={data}></Course>)
+        }
+             <p  className="text-[20px] font-bold">Total Credit Hour :{credit}</p>
+       </div>
+
+      
+
+
       </div>
     </>
   )
