@@ -6,6 +6,7 @@
       "price": 49.99,
       "credit": 3
     },
+
     {
       "course_cover_img": "https://i.ibb.co/Qp38r09/Rectangle-2-3.png",
       "name": "Algorithms and Data Structures",
@@ -13,6 +14,7 @@
       "price": 59.99,
       "credit": 4
     },
+
     {
       "course_cover_img": "https://i.ibb.co/GJTDZS7/Rectangle-3.png",
       "name": "Data Structures and Algorithms",
@@ -20,6 +22,7 @@
       "price": 69.99,
       "credit": 4
     },
+
     {
       "course_cover_img": "https://i.ibb.co/frdd9sz/Rectangle-2.png",
       "name": "Python Programming",
@@ -27,13 +30,15 @@
       "price": 49.99,
       "credit": 3
     },
+
     {
       "course_cover_img": "https://i.ibb.co/Qn1pXwP/Rectangle-2-5.png",
       "name": "Software Engineering Principles",
-      "description": "Learn the principles of software engineering, including design and development best practices.",
+      "description": "Learn the principles of software engineering, including design and development.",
       "price": 59.99,
       "credit": 4
     },
+
     {
       "course_cover_img": "https://i.ibb.co/M1qsSPt/Rectangle-3-1.png",
       "name": "Introduction to Cloud Computing",
@@ -41,13 +46,15 @@
       "price": 69.99,
       "credit": 4
     },
+
     {
       "course_cover_img": "https://i.ibb.co/CvTdmVf/Rectangle-2-1.png",
-      "name": "Database Management with MySQL",
+      "name": "Database with MySQL",
       "description": "Gain proficiency in MySQL database management and SQL queries.",
       "price": 49.99,
       "credit": 3
     },
+
     {
       "course_cover_img": "https://i.ibb.co/QnLDY32/Rectangle-2-6.png",
       "name": "Problem-Solving Strategies",
@@ -55,5 +62,14 @@
       "price": 39.99,
       "credit": 3
     }
+     ,
+    {
+      "course_cover_img": "https://i.ibb.co/b6xxQTp/Rectangle-2-4.png",
+      "name": "C++ Programming Mastery",
+      "description": "Master the C++ programming language and become a proficient C++ developer.",
+      "price": 79.99,
+      "credit": 4
+    }
+    
   ]
   
