@@ -1,17 +1,14 @@
 
 
 import PropTypes from 'prop-types';
+
 const Course = ({data,index}) => {
-    console.log(data);
-    const {name}=data;
+    const {name}=data
+   
     return (
-        <>
-               
-                <p>{++index}. {name}</p>
-                 
-        </>
-            
-        
+        <div>
+             <p>{++index}. {name}</p>
+        </div>
     );
 };
 Course.propTypes = {

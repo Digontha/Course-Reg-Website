@@ -1,39 +1,27 @@
-import { FaDollarSign,FaBook } from 'react-icons/fa'
+import { FaDollarSign, FaBook } from 'react-icons/fa'
 import PropTypes from 'prop-types';
-const Courses = ({data,handleName}) => {
-    const{name,course_cover_img,description,price,credit}=data;
-   
+const Courses = ({ data, handleName }) => {
+    const { name, course_cover_img, description, price, credit } = data
     return (
-        <div className="w-[320px] mx-auto h-[400px] shadow-md  border bg-[#fff] text-center p-2 space-y-5 rounded-lg">
-              <img className="w-fit mx-auto" src={course_cover_img} alt="" />
-              <p className="text-[18px] font-bold">{name}</p>
+        <>
+            <div className="card card-compact bg-base-100 shadow-xl ">
+                <figure><img className='w-full m-5' src={course_cover_img} alt="Shoes" /></figure>
+                <div className="card-body space-y-3">
+                    <h2 className="card-title">{name}</h2>
+                    <p className='text-[18px] font-light'>{description}</p>
+                    <div className='flex flex-wrap text-[#1C1B1B99]  justify-center font-medium text-center items-center gap-5'>
+                        <p className='flex items-center gap-1'><FaDollarSign/> Price:{price}</p>
+                        <p className='flex items-center gap-1'><FaBook/> Credit:{credit}hr</p>
+                    </div>
+                    <div onClick={()=>{handleName(data)}} className="card-actions ">
 
-              <p className="text-start text-[18px] font-light w-fit mx-auto ml-5 "><small>{description}</small></p>
-
-              <div className="flex text-[#1C1B1B99]  justify-center font-medium gap-10">
-
-                <div className="flex items-center gap-2">
-                <p><FaDollarSign></FaDollarSign></p>
-                     <p>Price:{price}</p>
-                     
+                        <button className="btn btn-primary w-full">select</button>
+                    </div>
                 </div>
-
-
-
-                <div className='flex items-center gap-2'>
-                <p><FaBook></FaBook></p>
-                    <p>Credit:{credit}hr</p>
-                    
-                </div>
-                      
-                      
-              </div>
-              <button onClick={()=>{handleName(data)}} className=" w-72 relative top-[-10px] mx-auto bg-purple-500 py-3 rounded-md text-lg font-medium text-[#fff]">Select</button>
-
-        </div>
+            </div>
+        </>
     );
 };
-
 Courses.propTypes = {
     data:PropTypes.object,
     handleName:PropTypes.func,
